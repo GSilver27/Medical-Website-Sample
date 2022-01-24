@@ -1,3 +1,56 @@
+/*------------- МЕДИА-ЗАПРОСЫ -------------*/
+@media screen and (max-width: 1880px) {
+    .part-gallery img {
+        margin-right: 1.5rem;
+    }
+
+    .part-gallery img:nth-of-type(4) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    body span {
+        font-size: 14px;
+    }
+
+    body .wrapper * {
+        font-size: 14px;
+    }
+
+    .wrapper header nav div {
+        font-size: 12px;
+    }
+
+    .wrapper header nav div h3 {
+        font-size: 20px;
+    }
+
+    .wrapper header nav button {
+        font-size: 12px;
+    }
+
+    .wrapper .part-main .text-on-img-main p span .font-size-42 {
+        font-size: 22px;
+    }
+
+    .part-gallery img:nth-of-type(4) {
+        margin-bottom: 1.5rem;
+    }
+
+    .part-form h3 {
+        font-size: 25px;
+    }
+
+    .part-form .width-40 {
+        width: 50%;
+    }
+
+    footer .width-500px {
+        width: 300px;
+    }
+}
+
 /*------------- УНИВЕРСАЛЬНЫЕ СЕЛЕКТОРЫ -------------*/
 body {
     font-size: 10px;
@@ -23,7 +76,6 @@ body.dark-theme .part-gallery {
 body .wrapper {
     font-size: 15px
 }
-
 
 .width-60 {
     margin: 0 auto;
@@ -259,7 +311,7 @@ textarea {
     max-height: 400px;
 }
 
-.width-50 {
+.width-40 {
     margin: 0 auto;
     width: 40%;
 }
@@ -281,8 +333,8 @@ textarea {
     height: 350px;
 }
 
-.width-600px {
-    width: 600px;
+.width-500px {
+    width: 500px;
 }
 
 .size-700px {
