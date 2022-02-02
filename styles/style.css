@@ -117,6 +117,7 @@ header {
     opacity: 85%;
     background-color: #f3f7fc;
     transition: transform .1s linear;
+    border-bottom: #918b8b 1px solid;
 }
 
 .header-hide {
