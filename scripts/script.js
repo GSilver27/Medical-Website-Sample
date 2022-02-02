@@ -51,10 +51,9 @@ if (animItems.length > 0) {
                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
             }
 
-            if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+            if ((pageYOffset > animItemOffset - animItemPoint) &&
+                pageYOffset < (animItemOffset + animItemHeight)) {
                 animItem.classList.add("active");
-            } else {
-                animItem.classList.remove("active");
             }
         }
     }
@@ -65,4 +64,21 @@ if (animItems.length > 0) {
             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         return { top: rect.top + scrollTop, left: rect.left +  scrollLeft }
     }
+}
+
+
+// плавное прокручивание до формы
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        const blockID = anchor.getAttribute('href').substr(1)
+
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
 }
