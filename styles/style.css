@@ -1,5 +1,5 @@
 /*------------- МЕДИА-ЗАПРОСЫ -------------*/
-@media screen and (max-width: 1880px) {
+/*@media screen and (max-width: 1880px) {
     .part-gallery img {
         margin-right: 1.5rem;
     }
@@ -49,7 +49,7 @@
     footer .width-500px {
         width: 300px;
     }
-}
+}*/
 
 /*------------- УНИВЕРСАЛЬНЫЕ СЕЛЕКТОРЫ -------------*/
 body {
@@ -82,8 +82,13 @@ body .wrapper {
     width: 60%;
 }
 
-a, a:hover {
+a {
     color: unset;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0069d9;
     text-decoration: none;
 }
 
@@ -91,20 +96,13 @@ a, a:hover {
     border-radius: unset;
 }
 
+header nav button a:hover,
+.part-doc div button a:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
 /*------------- ХЕДЕР -------------*/
-.progress-container {
-    width: 100%;
-    height: 8px;
-    background: #ccc;
-}
-
-.progress-bar {
-    border-top: 1px solid black;
-    height: 8px;
-    background: #1ca3e6;
-    width: 0;
-}
-
 .mode {
     width: 40px;
     height: 40px;
@@ -114,6 +112,7 @@ header {
     margin: 0 auto;
     padding: 1.2rem;
     height: 5rem;
+    width: 100%;
     opacity: 85%;
     background-color: #f3f7fc;
     transition: transform .1s linear;
@@ -122,6 +121,11 @@ header {
 
 .header-hide {
     transform: translateY(-5rem);
+    transition-duration: 0.5s;
+}
+
+header div h3 a:hover {
+    color: inherit;
 }
 
 header div h3::first-letter {
@@ -132,7 +136,24 @@ header div h3::first-letter {
     margin-left: 50px;
 }
 
+.progress-container {
+    width: 100%;
+    height: 6px;
+    z-index:1031;
+    opacity: 85%;
+    color: #f3f7fc;
+}
+
+.progress-bar {
+    height: 6px;
+    background: #1ca3e6;
+    width: 0;
+    border-bottom: black 1px solid;
+}
+
+
 /*------------- СТИЛИ МЕЙНА -------------*/
+
 .part-main {
     position: relative;
 }
@@ -142,19 +163,19 @@ header div h3::first-letter {
     top: 37%;
     left: 20%;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .part-main img {
     width: 100%;
 }
 
-.width-25 {
-    width: 25%;
+.container-main__width {
+    width: 530px;
 }
 
-.font-size-42 {
-    font-size: 42px;
+.font-size-big {
+    font-size: 52px;
 }
 
 .part-main a:hover {
@@ -188,6 +209,7 @@ header div h3::first-letter {
 /*------------- СТИЛИ ШАХМАТНОЙ СЕКЦИИ -------------*/
 div #text-on-img-chess {
     position: relative;
+    cursor:  pointer;
 }
 
 .text-on-img-chess {
@@ -238,13 +260,19 @@ div #text-on-img-chess {
 }
 
 .part-gallery #pics img:nth-child(1):hover {
-    border: 10px solid #1ca3e6;
-    transition-duration: 2s;
+    transform: translate(0, -15px);
+    box-shadow: -3px 10px 30px 5px rgba(0, 0, 0, 0.5);
+    transition-duration: 1s;
+}
+
+.part-gallery #pics img:nth-child(2) {
+    z-index: 1;
 }
 
 .part-gallery #pics img:nth-child(2):hover {
     transform: scale(1.3);
     transition: 2s;
+    z-index: 1;
 }
 
 .part-gallery #pics img:nth-child(3):hover {
@@ -273,31 +301,6 @@ div #text-on-img-chess {
 .part-gallery #pics img:nth-child(6):hover {
     filter: sepia(100%);
 }
-
-/* это реализация картинки на полный экран - не получилось :(
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 1em;
-    background: rgba(0, 0, 0, 0.8);
-}
-.lightbox:target {
-    display: block;
-}
-.lightbox span {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-*/
 
 /*------------- СТИЛИ ДЛЯ ЧАСТИ С ФОРМОЙ -------------*/
 .part-form h3 {
