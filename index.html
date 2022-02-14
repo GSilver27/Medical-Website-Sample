@@ -12,7 +12,7 @@
 
     <div class="wrapper">
 
-        <header class="fixed-top">
+        <header class="fixed-top d-flex align-items-end justify-content-between">
 
             <button class="position-fixed rounded-circle">
                 <img class="mode" src="images/mode.png" alt="mode">
@@ -44,7 +44,7 @@
 
             <img src="images/bg-main.png" alt="main-pic">
 
-            <div class="text-on-img-main container-main__width">
+            <div class="text-on-img-main container-text__width">
                 <p>
                     <span class="font-size-big">The best doctors<br> in <strong>Medicine!</strong></span><br>
                     in the world of modern medicine!
@@ -53,17 +53,17 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolorum facilis iste
                     laudantium praesentium, quod repellat unde? Cum earum inventore
                 </p>
-                <div class="d-flex justify-content-start mt-5 mb-5">
+                <div class="mt-5 mb-5">
                     <button type="submit" class="btn btn-brick btn-color-white font-weight-bold p-2 pl-4 pr-4"><a href="#form">GET STARTED NOW</a></button>
                 </div>
             </div>
 
         </div>
 
-        <div class="part-doc margin-top-bot-100px">
+        <div class="part-doc">
             <div class="width-60 d-flex justify-content-between align-items-center">
 
-                <div class="width-35">
+                <div class="container-text__width">
                     <p class="color-aqua font-weight-bold">
                         WELCOME TO CLINIC
                     </p>
@@ -126,48 +126,10 @@
         <div class="part-gallery d-flex justify-content-center ">
 
             <div id="pics" class="width-60 d-flex flex-wrap justify-content-between mt-5 mb-5">
-                <!-- это реализация картинки на полный экран - не получилось :(
-               <a href="#img1">
-                   <img class="img-1 mb-4 animated-left animated" src="images/gallery-1.png" alt="pic1">
-               </a>
-               <a href="" class="lightbox" id="img1">
-                   <span style="background-image: url('images/gallery-1.png')"></span>
-               </a>
-               <a href="#img2">
-                   <img class="mb-4 animated-left animated" src="images/gallery-2.png" alt="pic2">
-               </a>
-               <a href="" class="lightbox" id="img2">
-                   <span style="background-image: url('images/gallery-2.png')"></span>
-               </a>
-               <a href="#img3">
-                   <img class="mb-4 animated-left animated" src="images/gallery-3.png" alt="pic3">
-               </a>
-               <a href="" class="lightbox" id="img3">
-                   <span style="background-image: url('images/gallery-3.png')"></span>
-               </a>
-               <a href="#img4">
-                   <img class="animated-right animated" src="images/gallery-4.png" alt="pic4">
-               </a>
-               <a href="" class="lightbox" id="img4">
-                   <span style="background-image: url('images/gallery-4.png')"></span>
-               </a>
-               <a href="#img5">
-                   <img class="animated-right animated" src="images/gallery-5.png" alt="pic5">
-               </a>
-               <a href="" class="lightbox" id="img5">
-                   <span style="background-image: url('images/gallery-5.png')"></span>
-               </a>
-               <a href="#img6">
-                   <img class="animated-right animated" src="images/gallery-6.png" alt="pic6">
-               </a>
-               <a href="" class="lightbox" id="img6">
-                   <span style="background-image: url('images/gallery-6.png')"></span>
-               </a>
-                -->
 
-                <img class="mb-4 animated-left animated" src="images/gallery-1.png" alt="pic1">
-                <img class="mb-4 animated-left animated" src="images/gallery-2.png" alt="pic2">
-                <img class="mb-4 animated-left animated" src="images/gallery-3.png" alt="pic3">
+                <img class="mb-4 mt-4animated-left animated" src="images/gallery-1.png" alt="pic1">
+                <img class="mb-4 mt-4animated-left animated" src="images/gallery-2.png" alt="pic2">
+                <img class="mb-4 mt-4animated-left animated" src="images/gallery-3.png" alt="pic3">
                 <img class="animated-right animated" src="images/gallery-4.png" alt="pic4">
                 <img class="animated-right animated" src="images/gallery-5.png" alt="pic5">
                 <img class="animated-right animated" src="images/gallery-6.png" alt="pic6">
@@ -180,21 +142,21 @@
 
             <div class="d-flex flex-column justify-content-center">
                 <form action="#" method="post" enctype="text/plain">
-                    <h3 class="d-flex row width-40 justify-content-center mt-5 mb-5">Contact us</h3>
+                    <h3 class="d-flex row width-input justify-content-center mt-5 mb-5">Contact us</h3>
 
-                    <div class="form-group row width-40 d-flex justify-content-center ">
+                    <div class="form-group row width-input d-flex justify-content-center ">
                         <input class="form-control col-6" type="text" name="name" id="formGroupName" placeholder="Name" required>
                     </div>
 
-                    <div class="form-group row width-40 d-flex justify-content-center ">
+                    <div class="form-group row width-input d-flex justify-content-center ">
                         <input class="form-control col-6 mt-3" type="email" name="email" id="formGroupEmail" placeholder="Email" required>
                     </div>
 
-                    <div class="form-group row width-40 d-flex justify-content-center mt-3">
+                    <div class="form-group row width-input d-flex justify-content-center mt-3">
                         <input class="form-control col-6" type="text" name="subject" id="formGroupSubject" placeholder="Subject" required>
                     </div>
 
-                    <div class="form-group row width-40 d-flex justify-content-center mt-3">
+                    <div class="form-group row width-input d-flex justify-content-center mt-3">
                             <textarea class="form-control col-6" type="text" name="message"
                                       id="formGroupMessage" cols="14" rows="4" placeholder="Your Message" required></textarea>
                     </div>
@@ -208,9 +170,9 @@
         </div>
 
         <footer class="bg-dark-blue">
-            <div class="width-60 height-350px d-flex flex-row justify-content-between align-items-center">
+            <div class="width-60 footer__height-content d-flex flex-row justify-content-between align-items-start">
 
-                <div class="text-color-footer width-500px">
+                <div class="text-color-footer footer__width-container">
                     <h6 class="mb-4">Medical</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
