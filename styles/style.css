@@ -1,5 +1,6 @@
 /*------------- МЕДИА-ЗАПРОСЫ -------------*/
-/*@media screen and (max-width: 1880px) {
+@media screen and (min-width: 1500px) {
+
     .part-gallery img {
         margin-right: 1.5rem;
     }
@@ -7,14 +8,19 @@
     .part-gallery img:nth-of-type(4) {
         margin-bottom: 1.5rem;
     }
+
+    .wrapper footer {
+        padding-top: 100px !important;
+    }
 }
 
-@media screen and (max-width: 1500px) {
-    body span {
-        font-size: 14px;
+@media screen and (max-width: 1500px) and (min-width: 1020px) {
+
+    html {
+        font-size: 16px;
     }
 
-    body .wrapper * {
+    body span {
         font-size: 14px;
     }
 
@@ -30,11 +36,22 @@
         font-size: 12px;
     }
 
-    .wrapper .part-main .text-on-img-main p span .font-size-42 {
-        font-size: 22px;
+    .part-main .font-size-big {
+        font-size: 30px;
     }
 
-    .part-gallery img:nth-of-type(4) {
+    .part-main .text-on-img-main {
+        top: 30%;
+        font-size: 20px;
+        text-shadow: 0 -3px 10px black;
+    }
+
+    .part-main .container-text__width {
+        width: 500px;
+    }
+
+    .part-gallery img:nth-of-type(5),
+    .part-gallery img:nth-of-type(6) {
         margin-bottom: 1.5rem;
     }
 
@@ -42,14 +59,247 @@
         font-size: 25px;
     }
 
-    .part-form .width-40 {
+    .part-form .width-input {
         width: 50%;
     }
 
-    footer .width-500px {
+    .wrapper footer {
+        padding-top: 100px !important;
+    }
+
+    .wrapper footer .width-60 {
+        width: 80% !important;
+    }
+
+    footer .footer__width-container {
         width: 300px;
     }
-}*/
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1020px) {
+
+    header nav div h3 a {
+        display: block;
+    }
+
+    header nav div a {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1020px) and (min-width: 420px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .wrapper header .width-60 {
+        width: 80% !important;
+    }
+
+    .wrapper header button .mode{
+        width: 33px;
+        height: 33px;
+    }
+
+    header nav div h3 a {
+        display: block;
+    }
+
+    header nav div a {
+        display: none;
+    }
+
+    .part-main .font-size-big {
+        font-size: 24px;
+    }
+
+    .part-main .text-on-img-main {
+        top: 25%;
+        left: 10%;
+        font-size: 14px;
+        text-shadow: 0 -3px 10px black;
+    }
+
+    .part-main .container-text__width {
+        width: 330px;
+    }
+
+    .part-main div div {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .part-main div button {
+        padding: 0.2rem 1.4rem !important;
+    }
+
+    .wrapper .part-doc .width-60 {
+        width: 80% !important;
+    }
+
+    .wrapper .text-on-img-chess {
+        top: 25%;
+        left: 15%;
+        font-size: 18px;
+    }
+
+    .wrapper .part-chess div h5 {
+        font-size: 14px;
+    }
+
+    .wrapper .part-chess div h3 {
+        font-size: 16px;
+    }
+
+    .wrapper .part-chess div h2 {
+        font-size: 18px;
+    }
+
+    .wrapper .part-chess div{
+        font-size: 12px;
+    }
+
+    .wrapper .part-form form .width-input {
+        width: 100%;
+    }
+
+    .wrapper .part-form form h3 {
+        font-size: 30px;
+    }
+
+    .wrapper footer {
+        padding-top: 100px;
+    }
+
+    .wrapper footer .width-60 {
+        width: 80% !important;
+    }
+
+    .wrapper footer .footer__width-container {
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 420px) and (min-width: 320px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    .wrapper header {
+        display: block;
+        position: relative;
+        width: 100vw !important;
+    }
+
+    .wrapper header button .mode {
+        width: 25px;
+        height: 25px;
+        display: block !important;
+        position: relative !important;
+    }
+
+    header nav div h3 a {
+        display: block;
+    }
+
+    header nav div a {
+        display: none;
+    }
+
+    .wrapper header .width-60 {
+        width: 90% !important;
+    }
+
+    .wrapper header nav {
+        justify-content: center !important;
+    }
+
+    .wrapper .part-main img{
+        width: 100%;
+    }
+
+    .part-main .font-size-big {
+        font-size: 14px;
+    }
+
+    .part-main .text-on-img-main {
+        top: 17%;
+        left: 5%;
+        font-size: 8px;
+        text-shadow: 0 -3px 5px black;
+    }
+
+    .part-main .container-text__width {
+        width: 315px;
+        word-break: break-word;
+    }
+
+    .wrapper .part-doc .width-60 {
+        width: 90% !important;
+    }
+
+    .wrapper .part-doc {
+        font-size: 10px;
+    }
+
+    .wrapper .part-chess {
+        font-size: 8px;
+    }
+
+    .wrapper .text-on-img-chess {
+        top: 25%;
+        left: 9%;
+        font-size: 12px;
+    }
+
+    .wrapper .part-chess div h5 {
+        font-size: 9px;
+    }
+
+    .wrapper .part-chess div h3 {
+        font-size: 11px;
+    }
+
+    .wrapper .part-chess div h2 {
+        font-size: 12px;
+    }
+
+    .wrapper .part-chess div{
+        font-size: 7px;
+    }
+
+    .wrapper .part-gallery img {
+        width: 200px;
+    }
+
+    .wrapper .part-form form .width-input {
+        width: 100%;
+    }
+
+    .wrapper .part-form form h3 {
+        font-size: 22px;
+    }
+
+    .wrapper footer {
+        padding-top: 50px;
+    }
+
+    .wrapper footer {
+        font-size: 8px;
+    }
+
+    .wrapper footer .width-60 {
+        width: 90% !important;
+    }
+
+    .wrapper footer .footer__width-container {
+        width: 70px;
+    }
+
+}
 
 /*------------- УНИВЕРСАЛЬНЫЕ СЕЛЕКТОРЫ -------------*/
 body {
@@ -74,7 +324,8 @@ body.dark-theme .part-gallery {
 }
 
 body .wrapper {
-    font-size: 15px
+    font-size: 15px;
+    width: 100vw;
 }
 
 .width-60 {
@@ -109,10 +360,8 @@ header nav button a:hover,
 }
 
 header {
-    margin: 0 auto;
     padding: 1.2rem;
     height: 5rem;
-    width: 100%;
     opacity: 85%;
     background-color: #f3f7fc;
     transition: transform .1s linear;
@@ -153,7 +402,9 @@ header div h3::first-letter {
 
 
 /*------------- СТИЛИ МЕЙНА -------------*/
-
+main {
+    width: 100%;
+}
 .part-main {
     position: relative;
 }
@@ -170,8 +421,8 @@ header div h3::first-letter {
     width: 100%;
 }
 
-.container-main__width {
-    width: 530px;
+.container-text__width {
+    width: 550px;
 }
 
 .font-size-big {
@@ -188,13 +439,13 @@ header div h3::first-letter {
 
 /*------------- СТИЛИ ДЛЯ ЧАСТИ С ДОКТОРОМ -------------*/
 .part-doc {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height: 600px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
 }
 
-.width-35 {
-    width: 35%;
+.part-doc img {
+    width: 100%;
 }
 
 .color-aqua {
@@ -233,6 +484,7 @@ div #text-on-img-chess {
 
 /*------------- СТИЛИ ДЛЯ ГАЛЕРЕИ -------------*/
 .part-gallery {
+    width: 100vw;
     background-color: #f1f1f1;
 }
 
@@ -241,7 +493,7 @@ div #text-on-img-chess {
 }
 
 .animated-left {
-    transform: translate(-600%, 0px);
+    transform: translate(-450%, 0);
     transition-duration: 2s;
 }
 
@@ -250,7 +502,7 @@ div #text-on-img-chess {
 }
 
 .animated-right {
-    transform: translate(600%, 0px);
+    transform: translate(450%, 0);
     transition-duration: 2s;
 }
 
@@ -313,7 +565,7 @@ textarea {
     max-height: 400px;
 }
 
-.width-40 {
+.width-input {
     margin: 0 auto;
     width: 40%;
 }
@@ -331,15 +583,11 @@ textarea {
     color: #f4f4f5;
 }
 
-.height-350px {
+.footer__height-content {
     height: 350px;
 }
 
-.width-500px {
+.footer__width-container {
     width: 500px;
-}
-
-.size-700px {
-    height: 700px;
 }
 /*------------- THIS IS END -------------*/
