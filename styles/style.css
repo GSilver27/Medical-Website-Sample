@@ -1,16 +1,26 @@
 /*------------- МЕДИА-ЗАПРОСЫ -------------*/
 @media screen and (min-width: 1500px) {
 
-    .part-gallery img {
-        margin-right: 1.5rem;
+    .wrapper header nav {
+        font-size: 16px;
     }
 
-    .part-gallery img:nth-of-type(4) {
-        margin-bottom: 1.5rem;
+    .wrapper .part-chess img {
+        object-fit: cover;
+    }
+
+    .wrapper .part-gallery img {
+        object-fit: cover;
     }
 
     .wrapper footer {
-        padding-top: 100px !important;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .wrapper footer div:first-of-type {
+        height: 100% !important;
+        overflow-wrap: break-word;
     }
 }
 
@@ -50,9 +60,16 @@
         width: 500px;
     }
 
-    .part-gallery img:nth-of-type(5),
-    .part-gallery img:nth-of-type(6) {
-        margin-bottom: 1.5rem;
+    .wrapper .part-chess img {
+        object-fit: cover;
+    }
+
+    .wrapper .part-gallery img {
+        object-fit: cover;
+    }
+
+    .wrapper .part-gallery .width-60 {
+        width: 90% !important;
     }
 
     .part-form h3 {
@@ -64,7 +81,13 @@
     }
 
     .wrapper footer {
-        padding-top: 100px !important;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .wrapper footer div:first-of-type {
+        height: 100% !important;
+        overflow-wrap: break-word;
     }
 
     .wrapper footer .width-60 {
@@ -76,7 +99,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1020px) {
+@media screen and (max-width: 1240px) and (min-width: 1020px) {
 
     header nav div h3 a {
         display: block;
@@ -85,6 +108,25 @@
     header nav div a {
         display: none;
     }
+
+    .wrapper .part-chess img {
+        object-fit: cover;
+    }
+
+    .wrapper .part-gallery .width-60 {
+        width: 90% !important;
+    }
+
+    .part-gallery img:nth-of-type(1),
+    .part-gallery img:nth-of-type(3),
+    .part-gallery img:nth-of-type(5) {
+        margin-right: 0.3rem;
+    }
+
+    .part-gallery img:nth-of-type(4) {
+        margin-bottom: 1.5rem;
+    }
+
 }
 
 @media screen and (max-width: 1020px) and (min-width: 420px) {
@@ -144,6 +186,10 @@
         font-size: 18px;
     }
 
+    .wrapper .part-chess img {
+        object-fit: cover;
+    }
+
     .wrapper .part-chess div h5 {
         font-size: 14px;
     }
@@ -160,20 +206,34 @@
         font-size: 12px;
     }
 
+    .wrapper .part-gallery .width-60 {
+        width: 90% !important;
+    }
+
+    .part-gallery img:nth-of-type(4) {
+        margin-bottom: 1.5rem;
+    }
+
     .wrapper .part-form form .width-input {
         width: 100%;
     }
 
     .wrapper .part-form form h3 {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .wrapper footer {
-        padding-top: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .wrapper footer div:first-of-type {
+        height: 100% !important;
+
     }
 
     .wrapper footer .width-60 {
-        width: 80% !important;
+        width: 90% !important;
     }
 
     .wrapper footer .footer__width-container {
@@ -182,7 +242,64 @@
 
 }
 
-@media screen and (max-width: 420px) and (min-width: 320px) {
+@media screen and (max-width: 824px) and (min-width: 420px) {
+
+    .wrapper .part-gallery div {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .wrapper .part-gallery #pics img {
+        width: 50%;
+    }
+
+    .part-gallery img:nth-of-type(1),
+    .part-gallery img:nth-of-type(3),
+    .part-gallery img:nth-of-type(5) {
+        margin-right: 0.2rem;
+    }
+
+    .part-gallery img:nth-of-type(5) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .wrapper .text-on-img-chess {
+        top: 25%;
+        left: 13%;
+        font-size: 15px;
+    }
+
+    .wrapper .part-chess img {
+        object-fit: cover;
+    }
+
+    .wrapper .part-chess div{
+        font-size: 10px;
+    }
+
+    .wrapper footer div:first-of-type {
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        height: 100% !important;
+        flex-wrap: wrap !important;
+    }
+
+    .wrapper footer .footer__width-container {
+        width: 120px;
+    }
+
+    .wrapper footer .footer__width-container-small {
+        width: 120px;
+        padding-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 520px) and (min-width: 360px) {
 
     html {
         font-size: 10px;
@@ -194,11 +311,18 @@
         width: 100vw !important;
     }
 
-    .wrapper header button .mode {
-        width: 25px;
-        height: 25px;
+    .wrapper header button:nth-child(1) {
+        width: 35px;
+        height: 35px;
         display: block !important;
         position: relative !important;
+    }
+
+    .wrapper header button .mode {
+        width: 28px;
+        height: 28px;
+        display: block !important;
+        margin: -3px;
     }
 
     header nav div h3 a {
@@ -237,6 +361,10 @@
         word-break: break-word;
     }
 
+    .part-main .container-text__width div {
+        margin-top: 1rem !important;
+    }
+
     .wrapper .part-doc .width-60 {
         width: 90% !important;
     }
@@ -251,8 +379,12 @@
 
     .wrapper .text-on-img-chess {
         top: 25%;
-        left: 9%;
+        left: 12%;
         font-size: 12px;
+    }
+
+    .wrapper .part-chess img {
+        object-fit: cover;
     }
 
     .wrapper .part-chess div h5 {
@@ -271,8 +403,23 @@
         font-size: 7px;
     }
 
-    .wrapper .part-gallery img {
-        width: 200px;
+    .wrapper .part-gallery .width-60 {
+        width: 90% !important;
+    }
+
+    .wrapper .part-gallery #pics {
+        justify-content: flex-start !important;
+        align-items: center !important;
+    }
+
+    .part-gallery img {
+        margin-right: 0 !important;
+        width: 300px !important;
+    }
+
+    .part-gallery img:nth-of-type(4),
+    .part-gallery img:nth-of-type(5) {
+        margin-bottom: 1.5rem;
     }
 
     .wrapper .part-form form .width-input {
@@ -280,11 +427,21 @@
     }
 
     .wrapper .part-form form h3 {
-        font-size: 22px;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .wrapper footer div:first-of-type {
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        height: 100% !important;
+        flex-wrap: wrap !important;
     }
 
     .wrapper footer {
-        padding-top: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .wrapper footer {
@@ -296,7 +453,42 @@
     }
 
     .wrapper footer .footer__width-container {
-        width: 70px;
+        width: 100px;
+    }
+
+    .wrapper footer .footer__width-container-small {
+        width: 100px;
+        padding-top: 17px;
+    }
+
+}
+
+@media screen and (max-width: 580px) and (min-width: 520px) {
+
+    .wrapper header {
+        display: block;
+        position: relative;
+        width: 100vw !important;
+    }
+
+    .part-main .text-on-img-main {
+        top: 10%;
+        left: 10%;
+        font-size: 12px;
+        text-shadow: 0 -3px 10px black;
+    }
+
+    .part-main .container-text__width {
+        width: 330px;
+    }
+
+}
+
+@media screen and (max-width: 520px) and (min-width: 420px) {
+
+    .wrapper .part-gallery #pics {
+        justify-content: center !important;
+        align-items: center !important;
     }
 
 }
@@ -584,7 +776,7 @@ textarea {
 }
 
 .footer__height-content {
-    height: 350px;
+    height: 270px;
 }
 
 .footer__width-container {
