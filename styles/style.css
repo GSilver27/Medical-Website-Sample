@@ -53,7 +53,7 @@
     .part-main .text-on-img-main {
         top: 30%;
         font-size: 20px;
-        text-shadow: 0 -3px 10px black;
+        text-shadow: 0 0 4px black;
     }
 
     .part-main .container-text__width {
@@ -160,7 +160,7 @@
         top: 25%;
         left: 10%;
         font-size: 14px;
-        text-shadow: 0 -3px 10px black;
+        text-shadow: 0 0 3px black;
     }
 
     .part-main .container-text__width {
@@ -202,7 +202,7 @@
         font-size: 18px;
     }
 
-    .wrapper .part-chess div{
+    .wrapper .part-chess div {
         font-size: 12px;
     }
 
@@ -229,7 +229,6 @@
 
     .wrapper footer div:first-of-type {
         height: 100% !important;
-
     }
 
     .wrapper footer .width-60 {
@@ -243,6 +242,10 @@
 }
 
 @media screen and (max-width: 824px) and (min-width: 420px) {
+
+    .wrapper .part-chess div {
+        padding-top: 0.5rem !important;
+    }
 
     .wrapper .part-gallery div {
         justify-content: center !important;
@@ -299,6 +302,52 @@
 
 }
 
+@media screen and (max-width: 700px) and (min-width: 360px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    .wrapper footer * {
+        font-size: 1.5rem !important;
+    }
+    .wrapper footer div {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: flex-start !important;
+    }
+
+    .wrapper footer .footer__width-container {
+        width: 50% !important;
+    }
+
+    .wrapper footer .footer__width-container-small {
+        width: 50% !important;
+        padding-top: 20px;
+    }
+
+}
+@media screen and (max-width: 580px) and (min-width: 520px) {
+
+    .wrapper header {
+        display: block;
+        position: relative;
+        width: 100vw !important;
+    }
+
+    .part-main .text-on-img-main {
+        top: 10%;
+        left: 10%;
+        font-size: 12px;
+        text-shadow: 0 0 4px black;
+    }
+
+    .part-main .container-text__width {
+        width: 330px;
+    }
+
+}
+
 @media screen and (max-width: 520px) and (min-width: 360px) {
 
     html {
@@ -306,9 +355,12 @@
     }
 
     .wrapper header {
-        display: block;
         position: relative;
         width: 100vw !important;
+    }
+
+    .wrapper header nav div {
+        justify-content: space-evenly !important;
     }
 
     .wrapper header button:nth-child(1) {
@@ -353,7 +405,7 @@
         top: 17%;
         left: 5%;
         font-size: 8px;
-        text-shadow: 0 -3px 5px black;
+        text-shadow: 0 0 4px black;
     }
 
     .part-main .container-text__width {
@@ -375,6 +427,10 @@
 
     .wrapper .part-chess {
         font-size: 8px;
+    }
+
+    .wrapper .part-chess div {
+        padding: 0.5rem 0 0.2rem 0 !important;
     }
 
     .wrapper .text-on-img-chess {
@@ -408,7 +464,7 @@
     }
 
     .wrapper .part-gallery #pics {
-        justify-content: flex-start !important;
+        justify-content: center !important;
         align-items: center !important;
     }
 
@@ -422,8 +478,18 @@
         margin-bottom: 1.5rem;
     }
 
-    .wrapper .part-form form .width-input {
-        width: 100%;
+    .wrapper .part-form div {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .wrapper .part-form div form * {
+        margin: 7px auto !important;
+    }
+
+    .wrapper .part-form div form div button {
+        display: block !important;
+        margin: 15px auto !important;
     }
 
     .wrapper .part-form form h3 {
@@ -459,36 +525,6 @@
     .wrapper footer .footer__width-container-small {
         width: 100px;
         padding-top: 17px;
-    }
-
-}
-
-@media screen and (max-width: 580px) and (min-width: 520px) {
-
-    .wrapper header {
-        display: block;
-        position: relative;
-        width: 100vw !important;
-    }
-
-    .part-main .text-on-img-main {
-        top: 10%;
-        left: 10%;
-        font-size: 12px;
-        text-shadow: 0 -3px 10px black;
-    }
-
-    .part-main .container-text__width {
-        width: 330px;
-    }
-
-}
-
-@media screen and (max-width: 520px) and (min-width: 420px) {
-
-    .wrapper .part-gallery #pics {
-        justify-content: center !important;
-        align-items: center !important;
     }
 
 }
