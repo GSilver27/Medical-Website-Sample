@@ -82,3 +82,9 @@ for (let anchor of anchors) {
         })
     })
 }
+
+
+// "обработка" формы
+function formAction() {
+    alert("Спасибо за заявку!");
+}
