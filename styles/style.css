@@ -330,7 +330,7 @@
 @media screen and (max-width: 580px) and (min-width: 520px) {
 
     .wrapper header {
-        display: block;
+        display: block !important;
         position: relative;
         width: 100vw !important;
     }
@@ -348,7 +348,7 @@
 
 }
 
-@media screen and (max-width: 520px) and (min-width: 360px) {
+@media screen and (max-width: 520px) and (min-width: 320px) {
 
     html {
         font-size: 10px;
@@ -357,6 +357,10 @@
     .wrapper header {
         position: relative;
         width: 100vw !important;
+    }
+
+    .wrapper header nav div:first-of-type {
+        margin-right: 55px;
     }
 
     .wrapper header nav div {
