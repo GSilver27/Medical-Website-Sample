@@ -356,6 +356,7 @@
 
     .wrapper header {
         position: relative;
+        display: block;
         width: 100vw !important;
     }
 
@@ -363,9 +364,6 @@
         margin-right: 55px;
     }
 
-    .wrapper header nav div {
-        justify-content: space-evenly !important;
-    }
 
     .wrapper header button:nth-child(1) {
         width: 35px;
@@ -459,7 +457,7 @@
         font-size: 12px;
     }
 
-    .wrapper .part-chess div{
+    .wrapper .part-chess div {
         font-size: 7px;
     }
 
@@ -544,6 +542,11 @@ body {
 body.dark-theme {
     color: #ffffff;
     background-color: #2c2b2b;
+}
+
+body.dark-theme header a {
+    color: #fff;
+    text-decoration: none;
 }
 
 body.dark-theme header {
