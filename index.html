@@ -125,16 +125,22 @@
 
         </div>
 
-        <div class="part-gallery d-flex justify-content-center ">
+        <div class="part-gallery d-flex justify-content-between ">
 
             <div id="pics" class="width-60 d-flex flex-wrap justify-content-between mt-5 mb-5">
 
-                <img class="mb-4 animated-left animated" src="images/gallery-1.png" alt="pic1">
-                <img class="mb-4 animated-left animated" src="images/gallery-2.png" alt="pic2">
-                <img class="mb-4 animated-left animated" src="images/gallery-3.png" alt="pic3">
-                <img class="animated-right animated" src="images/gallery-4.png" alt="pic4">
-                <img class="animated-right animated" src="images/gallery-5.png" alt="pic5">
-                <img class="animated-right animated" src="images/gallery-6.png" alt="pic6">
+                <img id="modalImg1" class="animated mb-4" src="images/gallery-1.png" alt="pic1">
+                <img id="modalImg2" class="animated mb-4" src="images/gallery-2.png" alt="pic2">
+                <img id="modalImg3" class="animated mb-4" src="images/gallery-3.png" alt="pic3">
+                <img id="modalImg4" class="animated" src="images/gallery-4.png" alt="pic4">
+                <img id="modalImg5" class="animated" src="images/gallery-5.png" alt="pic5">
+                <img id="modalImg6" class="animated" src="images/gallery-6.png" alt="pic6">
+
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img">
+                    <div id="caption"></div>
+                </div>
 
             </div>
 
