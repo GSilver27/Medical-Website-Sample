@@ -89,3 +89,52 @@ function formAction() {
     alert("Спасибо за заявку!");
     return false;
 }
+
+
+// просмотр фотографий в модальном окне колхозная версия
+let modal = document.getElementById("myModal");
+
+let img1 = document.getElementById( "modalImg1");
+let img2 = document.getElementById( "modalImg2");
+let img3 = document.getElementById( "modalImg3");
+let img4 = document.getElementById( "modalImg4");
+let img5 = document.getElementById( "modalImg5");
+let img6 = document.getElementById( "modalImg6");
+
+let modalImg = document.getElementById("img");
+
+img1.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+img2.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+img3.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+img4.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+img5.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+img6.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+let span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
