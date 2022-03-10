@@ -29,12 +29,11 @@
 
                 <button type="submit" class="btn btn-brick btn-color-aqua font-weight-bold p-2 pl-4 pr-4"><a href="#form">GET STARTED</a></button>
 
-                <button id="mode" class="rounded-circle mr-1 ml-5">
-                    <img class="mode" src="images/mode.png" alt="mode">
-                </button>
-
             </nav>
 
+            <button id="mode" class="rounded-circle mr-1 ml-5">
+                <img class="mode" src="images/mode.png" alt="mode">
+            </button>
 
         </header>
 
@@ -129,17 +128,16 @@
 
             <div id="pics" class="width-60 d-flex flex-wrap justify-content-between mt-5 mb-5">
 
-                <img id="modalImg1" class="animated mb-4" src="images/gallery-1.png" alt="pic1">
-                <img id="modalImg2" class="animated mb-4" src="images/gallery-2.png" alt="pic2">
-                <img id="modalImg3" class="animated mb-4" src="images/gallery-3.png" alt="pic3">
-                <img id="modalImg4" class="animated" src="images/gallery-4.png" alt="pic4">
-                <img id="modalImg5" class="animated" src="images/gallery-5.png" alt="pic5">
-                <img id="modalImg6" class="animated" src="images/gallery-6.png" alt="pic6">
+                <img class="modalImg animated mb-4" src="images/gallery-1.png" alt="pic1">
+                <img class="modalImg animated mb-4" src="images/gallery-2.png" alt="pic2">
+                <img class="modalImg animated mb-4" src="images/gallery-3.png" alt="pic3">
+                <img class="modalImg animated" src="images/gallery-4.png" alt="pic4">
+                <img class="modalImg animated" src="images/gallery-5.png" alt="pic5">
+                <img class="modalImg animated" src="images/gallery-6.png" alt="pic6">
 
                 <div id="myModal" class="modal">
                     <span class="close">&times;</span>
                     <img class="modal-content" id="img">
-                    <div id="caption"></div>
                 </div>
 
             </div>
@@ -149,7 +147,7 @@
         <div id="form" class="part-form d-flex flex-column justify-content-center">
 
             <div class="d-flex flex-column justify-content-center">
-                <form onsubmit="formAction()" method="post" enctype="text/plain">
+                <form>
                     <h3 class="d-flex row width-input justify-content-center mt-5 mb-5">Contact us</h3>
 
                     <div class="form-group row width-input d-flex justify-content-center ">
@@ -170,7 +168,7 @@
                     </div>
 
                     <div class="d-flex justify-content-center mt-4 mb-5">
-                        <button type="submit" class="btn btn-outline-info pl-4 pr-4">SUBMIT</button>
+                        <button id="btnFormSubmit" type="submit" class="btn btn-outline-info pl-4 pr-4">SUBMIT</button>
                     </div>
                 </form>
             </div>
