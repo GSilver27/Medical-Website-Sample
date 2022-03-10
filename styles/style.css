@@ -315,6 +315,7 @@
     .wrapper footer * {
         font-size: 1.5rem !important;
     }
+
     .wrapper footer div {
         flex-direction: row !important;
         flex-wrap: wrap !important;
@@ -334,7 +335,6 @@
 @media screen and (max-width: 580px) and (min-width: 520px) {
 
     .wrapper header {
-        display: block !important;
         position: relative !important;
         width: 100vw !important;
     }
@@ -375,7 +375,6 @@
 
     .wrapper header {
         position: relative !important;
-        display: block !important;
         width: 100vw !important;
     }
 
@@ -384,10 +383,6 @@
         height: 35px;
         display: block !important;
         position: relative !important;
-    }
-
-    .wrapper header nav:first-child{
-        left: 0;
     }
 
     .wrapper header button .mode {
@@ -411,7 +406,7 @@
     }
 
     .wrapper header nav {
-        justify-content: center !important;
+        justify-content: space-between !important;
     }
 
     .wrapper .part-main img {
@@ -450,14 +445,19 @@
         font-size: 8px;
     }
 
+    .wrapper .part-chess img:first-of-type,
+    .wrapper .part-chess img:last-of-type {
+        width: 100%;
+    }
+
     .wrapper .part-chess div {
         padding: 0.5rem 0 0.2rem 0 !important;
     }
 
     .wrapper .text-on-img-chess {
-        top: 25%;
-        left: 12%;
-        font-size: 12px;
+        top: 19%;
+        left: 28%;
+        font-size: 21px;
     }
 
     .wrapper .part-chess img {
@@ -545,6 +545,20 @@
     .wrapper footer .footer__width-container-small {
         width: 100px;
         padding-top: 17px;
+    }
+
+}
+
+@media screen and (max-width: 420px) and (min-width: 330px) {
+
+    .wrapper .text-on-img-chess {
+        top: 16%;
+        left: 23%;
+        font-size: 21px;
+    }
+
+    .wrapper .part-form form h3 {
+        font-size: 18px;
     }
 
 }
@@ -766,50 +780,50 @@ div #text-on-img-chess {
     transition-duration: 2s;
 }
 
-.part-gallery #pics img:nth-child(1):hover {
+.part-gallery #pics #modalImg1:hover {
     transform: translate(0, -15px);
     box-shadow: -3px 10px 30px 5px rgba(0, 0, 0, 0.5);
     transition-duration: 1s;
 }
 
-.part-gallery #pics img:nth-child(2) {
+.part-gallery #pics #modalImg2 {
     z-index: 1;
 }
 
-.part-gallery #pics img:nth-child(2):hover {
+.part-gallery #pics #modalImg2:hover {
     transform: scale(1.3);
     transition: 2s;
     z-index: 1;
     box-shadow: -3px 10px 30px 5px rgba(0, 0, 0, 0.5);
 }
 
-.part-gallery #pics img:nth-child(3):hover {
+.part-gallery #pics #modalImg3:hover {
     border-radius: 50%;
     transition-duration: 2s;
     box-shadow: -3px 10px 30px 5px rgba(0, 0, 0, 0.5);
 }
 
-.part-gallery #pics img:nth-child(4) {
+.part-gallery #pics #modalImg4 {
     filter: grayscale(100%);
     transition: 2s;
 }
 
-.part-gallery #pics img:nth-child(4):hover {
+.part-gallery #pics #modalImg4:hover {
     filter: grayscale(0);
     box-shadow: -3px 10px 30px 5px rgba(0, 0, 0, 0.5);
 }
 
-.part-gallery #pics img:nth-child(5):hover {
+.part-gallery #pics #modalImg5:hover {
     transform: scale(0.7);
     box-shadow: -3px 10px 30px 5px rgba(0, 0, 0, 0.5);
 }
 
-.part-gallery #pics img:nth-child(6) {
+.part-gallery #pics #modalImg6 {
     filter: sepia(0);
     transition: 2s;
 }
 
-.part-gallery #pics img:nth-child(6):hover {
+.part-gallery #pics #modalImg6:hover {
     filter: sepia(100%);
     box-shadow: -3px 10px 30px 5px rgba(0, 0, 0, 0.5);
 }
